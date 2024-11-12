@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@700&display=swap');
+
+.content {
+  display: flex;
+  height: 82.2vh;
+}
+
+.data{
+  margin-left: 114px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin-top: 78px;
+  justify-content: start;
+}
+.analysis{
+  width: 25%;
+  height: 100%;
+}
+.card{
+  background-color: white;
+  border-radius: 24px;
+  border: 0px;
+  width: 25%;
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+.cards{
+  display: flex;
+  gap: 21px;
+
+}
+.card .digit{
+  font-size:  40px;
+  font-family: var(--main-font-family);
+}
+.card p{
+  margin: 0px;
+  padding: 0px;
+  color: var(--main-text-color);
+}
+.card .title{
+  font-size: 17px;
+  font-weight: bold;
+}
+.change-down{
+  font-size: 16px;
+  color: var(--primary-color) !important;
+}
+.change-up{
+  font-size: 16px;
+  color: #00CBC0 !important;
+}
+.measure-unit{
+  font-size: 22px;
+  vertical-align:sub;
+  position: relative;
+  top: -12px;
+}
+.mini-measure-unit{
+  font-size: 16px;
+  vertical-align:sub;
+  position: relative;
+  top: -4px;
+}
+.currency{
+  font-size: 22px;
+  vertical-align: super;
+  position: relative;
+  top: 2px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.pill {
+  cursor: pointer;
+  padding: 0px 40px;
+  border-radius: 30px;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+:checked + .pill {
+  background:var(--primary-color);
+  color: white;
+}
+span{
+  height: 100%;
+}
+
+#grouped-radio-pill {
+  background-color: white;
+  height: 44px;
+  width: max-content;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#radio-section{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.data-row-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  z-index: 10;
+}
+
+::-webkit-scrollbar-track {
+  margin: 28px 0px;
+  margin-left: 10px;
+  box-shadow: inset 0 0 5px #F4DBD4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+
+.analysis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 63px;
+}
+.shared-header {
+  font-size: 20px;
+  color: var(--main-text-color);
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sales-by-station{
+
+  margin-bottom: 77px;
+}
+.graph{
+  margin-top: 55px;
+}
+.progress-bars{
+  margin-top: 87px;
+}
+.progress-rows{
+  width: 298px;
+}
+.progress-row{
+  margin-bottom: 46px;
+}
+.progress {
+  height: 6px;
+}
+.station-title{
+  font-size: 16px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.progress-bar {
+  background-color: var(--primary-color);
+
+}

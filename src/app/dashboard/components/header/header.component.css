@@ -1,0 +1,96 @@
+#header {
+  width: 100%;
+  height: 124px;
+  background-color: white;
+  padding-left: 114px;
+}
+.digit {
+  font-size: 32px;
+  color: var(--main-text-color);
+  padding: 0px 10px;
+}
+.block-text {
+  font-size: 13px;
+  color: var(--main-text-color);
+  width: 60px;
+  line-height: 14px;
+}
+#refresh {
+  height: 40px;
+  transform: rotate(90deg);
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+.pill {
+  cursor: pointer;
+  padding: 0px 40px;
+  border-radius: 30px;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+:checked + .pill {
+  background:var(--primary-color);
+  color: white;
+}
+span{
+  height: 100%;
+}
+
+#grouped-radio-pill {
+  background-color: var(--secondary-color);
+  width: 472px;
+  height: 44px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-date-time-input {
+  width: 242px;
+  height: 34.5;
+  border: 0px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--main-text-color);
+}
+
+.custom-date-time-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 0px ;
+  /* background-color: #f9f9f9; */
+}
+.custom-date-time-input input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 0px ;
+  background-color: white;
+}
+.custom-date-time-input input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 0px ;
+}
+
+.custom-date-time-input input[type="datetime-local"]:focus {
+  outline: none;
+}
+.icon{
+  height: 16px;
+}
+fa-icon{
+  color: var(--primary-color);
+}
+

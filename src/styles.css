@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+:root {
+  --primary-color: #ff7f5c;
+  --secondary-color: #f9f5f3;
+
+  --main-text-color: #3d5161;
+
+  --main-font-family: "Roboto", sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--secondary-color) !important;
+  font-family: var(--main-font-family), sans-serif !important;
+  color: var(--main-text-color);
+}
+
+li {
+  display: flex;
+  position: relative;
+  padding-left: 1em;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.5em;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

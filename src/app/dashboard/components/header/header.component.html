@@ -1,0 +1,51 @@
+<div id="header" class="d-flex  justify-content-evenly align-items-center ">
+  <div>
+    <li class=" d-flex align-items-center">
+      <img src="icons/gas-station-svgrepo-com.svg" alt="gas station icon">
+      <!-- TODO change to dynamic -->
+      <span class="digit"> 2/3</span>
+      <span class="block-text center"> Monitored Stations</span>
+    </li>
+  </div>
+  <div>
+    <li class=" d-flex align-items-center">
+      <img id="refresh" src="icons/refresh.png" alt="refresh icon">
+      <!-- TODO change to dynamic -->
+      <span class="digit"> 20s</span>
+      <span class="block-text center">Last Update</span>
+    </li>
+  </div>
+  <!-- todo animate -->
+  <div id="grouped-radio-pill">
+    <span>
+      <input type='radio' name='day-pills' value='today' checked='true' id='today'>
+      <label class="pill" for='today'>Today</label>
+    </span>
+
+    <span>
+      <input type='radio' name='day-pills' value='yesterday' id='yesterday'>
+      <label class="pill" for='yesterday'>Yesterday</label>
+    </span>
+
+    <span>
+      <input type='radio' name='day-pills' value='last-weak' id='last-weak'>
+      <label class="pill" for='last-weak'>Last Week</label>
+    </span>
+  </div>
+  <div>
+    <div  class="custom-date-time-input">
+      <label for="startdate" > <fa-icon [icon]="playIcon" ></fa-icon></label>
+      <input class="date-text" type="text" placeholder="Start date-time" onfocus="(this.type='datetime-local')"
+        onblur="(this.type='text')" id="startdate" name="startdate">
+          <img  class="icon" src="icons/calendar.png" alt="calender icons">
+    </div>
+  </div>
+  <div>
+    <div class="custom-date-time-input">
+      <label for="enddate" > <fa-icon [icon]="stopIcon" ></fa-icon></label>
+      <input class="date-text" type="text" placeholder="End date-time" onfocus="(this.type='datetime-local')"
+        onblur="(this.type='text')" id="enddate" name="enddate">
+          <img  class="icon" src="icons/calendar.png" alt="calender icons">
+    </div>
+  </div>
+</div>
