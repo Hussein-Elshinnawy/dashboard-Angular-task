@@ -32,23 +32,32 @@
       <section id="radio-section">
         <div id="grouped-radio-pill">
           <span>
-            <input type='radio' Name='data-view' value='graph' id='graph'>
-            <label class="pill" for='graph'><fa-icon [icon]="chartBar" class="pe-1"></fa-icon> Graph</label>
+            <input type="radio" name="data-view" value="graph" id="graph" [checked]="view === 'graph'"
+              (change)="onViewChange('graph')">
+            <label class="pill" for="graph">
+              <fa-icon [icon]="chartBar" class="pe-1"></fa-icon> Graph
+            </label>
           </span>
 
           <span>
-            <input type='radio' Name='data-view' value='list' id='list' checked='true'>
-            <label class="pill" for='list'><fa-icon [icon]="listIcon" style="transform: rotate(90deg); "
-                class="pt-3"></fa-icon>List</label>
+            <input type="radio" name="data-view" value="list" id="list" [checked]="view === 'list'"
+              (change)="onViewChange('list')">
+            <label class="pill" for="list">
+              <fa-icon [icon]="listIcon" style="transform: rotate(90deg);" class="pt-3"></fa-icon> List
+            </label>
           </span>
-
         </div>
       </section>
 
-      <section class="data-row-section">
 
+      <section *ngIf="view === 'list'" class="data-row-section">
         <app-data-rows-section></app-data-rows-section>
       </section>
+
+      <section *ngIf="view === 'graph'" class="graph-section" >
+        <img class="graph-data" src="data-graph.png" alt="">
+      </section>
+
 
     </div>
     <div class="analysis">
@@ -58,16 +67,6 @@
         <h1 class="sales-by-station shared-header">Sales by Station</h1>
         <div class="progress-rows">
 
-          <!-- <div class="progress-row">
-            <div class="d-flex align-items-end mb-2">
-              <img src="icons/gas-station-svgrepo-com.svg" alt="gas station icon">
-              <span class="station-title">Station Name <span
-                class="mini-measure-unit">m<sup>3</sup></span> </span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div> -->
           <div class="progress-row">
             <div class="d-flex align-items-end justify-content-between mb-2">
               <div class="d-flex align-items-end">
@@ -97,16 +96,6 @@
             </div>
           </div>
 
-
-          <!-- <div class="progress-row">
-            <div class="d-flex align-items-end mb-2">
-              <img src="icons/gas-station-svgrepo-com.svg" alt="gas station icon">
-              <span class="station-title">Station Name <span
-                style="color: #B9CDE2;">NM</span></span>
-            </div>
-            <div class="progress" style="background-color: #B9CDE2;">
-              <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-            </div> -->
           <div class="progress-row">
             <div class="d-flex align-items-end justify-content-between mb-2">
               <div class="d-flex align-items-end">
